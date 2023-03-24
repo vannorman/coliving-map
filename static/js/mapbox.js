@@ -1,5 +1,4 @@
  /* MAPBOX BOILER CODE */
-  mapboxgl.accessToken = 'pk.eyJ1IjoiY2N2YW5ub3JtYW4iLCJhIjoiY2s2cHMzOTV3MGN3czNrcnRrbHluY3Z2biJ9.F-tDaYlyyRByDxv6jLUdpw';
   var map = new mapboxgl.Map({
     container: 'map',
     center:[-97.7441, 30.2714],
