@@ -1,0 +1,80 @@
+html, body, * {
+    font-family:Nunito;
+    margin:0;
+    border:0;
+    padding:0;
+}
+@font-face {
+    font-family: Nunito;
+    src: url('/static/fonts/Nunito-Regular.ttf');
+}
+@font-face {
+    font-family: NunitoBold;
+    src: url('/static/fonts/Nunito-Bold.ttf');
+}
+
+#map {
+    width:100%;
+    height:1005;
+    position:fixed;
+    top:0;
+    lefT:0;
+}
+
+/***** MARKER STYLES */
+/*********************/
+.marker {
+  background-image: url('/static/img/potion.png');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  border-radius:50px;
+}
+
+/*****  MENU STYLES  */
+/*********************/
+#menu {
+    position:fixed;top:10px;left:10px;
+    background-color:white;
+    border:1px solid #444;
+    border-radius:25px;
+    width:120px;
+    height:50px;
+    transition: all 0.3s;
+}
+
+#menu.open {
+    height:250px;
+
+}
+
+
+
+.showhide {
+    cursor: pointer;
+    display:inline-block;
+    border-radius:25px;
+    width:20;
+    height:20;
+    line-height:20px;
+    text-align:center;
+    border:1px solid black;
+}
+.showhide::after {
+    content:'>';
+}
+.showhide.open::after {
+    content:'v';
+}
+
